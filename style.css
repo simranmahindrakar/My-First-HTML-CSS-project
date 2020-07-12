@@ -197,10 +197,41 @@ section {
 .box {
     padding: 1%;
 }
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
 
-
-
-
+/*--------------MEALS SHOWCASE IMAGES-------------*/
+.section-meals {
+    padding: 0;
+}
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden; /*overflowing of images is hidden*/
+    background-color: black; /*to make images darker*/
+}
+.meal-photo img {
+    opacity: 0.7; /*make img darker*/
+    width: 100%;
+    height: auto;
+    transform: scale(1.15); /*zoom out img*/
+    transition: transform 0.5s, opacity 0.5s;
+    
+}
+.meal-photo img:hover {
+    transform: scale(1.03); /*1.03 to tackle the annoying whte border-bottom*/
+    opacity: 1;
+}
 
 
 
