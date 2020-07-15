@@ -7,12 +7,14 @@
     box-sizing: border-box;
 }
 
-html{
+html,
+body {
     color: #555;
     font-family: 'Lato','Ariel',sans-serif;
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;  /*text rendering done perfectly*/
+    overflow-x: hidden;
 }
 .clearfix {zoom: 1}   /*to clear float prop of fav meals img*/
 .clearfix:after {
