@@ -192,8 +192,15 @@ header {
     float: left;
     margin-top: 20px;
 }
+.logo-black {
+    display: none;
+     height: 55px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
 
-/*--------------NAVIGATION------------*/
+/*--------------MAIN NAVIGATION------------*/
 .main-nav {
     float: right;
     list-style: none;
@@ -222,6 +229,24 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 } 
+/*-----------------------------------STICKY NAVIGATION------------------------------- */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;  /*element always over other elements*/
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 23px 0;
+    color: #555;
+}
+.sticky .logo {display: none;}
+.sticky .logo-black {display: block;}
+.sticky .main-nav {margin-top: 18px;}
 
 section {
     padding: 80px 0;
@@ -551,8 +576,24 @@ footer p {
     transition: color 0.2s;
 }
 
+/*---------------------ANIMATIONS------------*/
 
-
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0; /*makes element invisible*/
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+.js--wp-4 {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
 
 
 
